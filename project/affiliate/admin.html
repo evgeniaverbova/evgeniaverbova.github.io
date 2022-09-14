@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title</title>
+
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<header class="fon-line fon-line-head">
+		<div class="container">
+			<div class="head-top">
+				<a href="/index.html"><img src="img/logo.png" alt=""></a>
+				<div class="log-in">
+					<span>Привет, Админ!</span>
+					<button class="btn">Выйти</button>
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+					<li class="active"><a href="#">Главная страница</a></li>
+					<li class="dropdown-top"><a href="#">Работа с партнерами</a>
+						<ul>
+							<li><a href="#">Список партнеров</a></li>
+							<li><a href="#">Добавить партнера</a></li>
+							<li class="dropdown-r"><a href="#">Связь с партнерами</a>
+								<ul>
+									<li class="dropdown-r"><a href="#">Массовя рассылка</a>
+										<ul>
+											<li><a href="#">Новая рассылка</a></li>
+											<li><a href="#">Список рассылок</a></li>
+											<li><a href="#">SMTP-настройки</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Автоматические письма</a></li>
+									<li><a href="#">Сообщения</a></li>
+									<li><a href="#">Поп-ап сообщения</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Комиссионные группы</a></li>
+							<li><a href="#">Партнерские группы</a></li>
+							<li><a href="#">Правила и условия</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Отчеты</a></li>
+					<li class="dropdown-top dropdown-top-r"><a href="#">Маркетинговые инструменты</a>
+						<ul>
+							<li><a href="#">Список партнеров</a></li>
+							<li><a href="#">Добавить партнера</a></li>
+							<li class="dropdown-r"><a href="#">Связь с партнерами</a>
+								<ul>
+									<li class="dropdown-r"><a href="#">Массовя рассылка</a>
+										<ul>
+											<li><a href="#">Новая рассылка</a></li>
+											<li><a href="#">Список рассылок</a></li>
+											<li><a href="#">SMTP-настройки</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Автоматические письма</a></li>
+									<li><a href="#">Сообщения</a></li>
+									<li><a href="#">Поп-ап сообщения</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Комиссионные группы</a></li>
+							<li><a href="#">Партнерские группы</a></li>
+							<li><a href="#">Правила и условия</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Платежи</a></li>
+					<li><a href="#">Настройки</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="box-graph">
+				<div class="b-control">
+					<p class="styleh1">Статистика в виде графика</p>
+
+					<div class="select-box norm">
+						<select id="s_period" class="s_period">
+							<option></option>
+							<option>пункт1</option>
+							<option>пункт2</option>
+						</select>
+					</div>
+				</div>
+				<div class="b-info">
+
+					<div class="b-info__item b-info__item--red b-info__item--right">
+						<div class="b-info-data">
+							<div class="b-data__item"><span>400</span></div>
+							<div class="b-data__item"><span>300</span></div>
+							<div class="b-data__item"><span>200</span></div>
+							<div class="b-data__item"><span>100</span></div>
+						</div>
+						<div class="b-info-text">
+							<span>клики</span>
+						</div>
+					</div>
+
+					<div class="b-info__item b-info__item--blue b-info__item--right">
+						<div class="b-info-data">
+							<div class="b-data__item"><span>400000</span></div>
+							<div class="b-data__item"><span>300000</span></div>
+							<div class="b-data__item"><span>200000</span></div>
+							<div class="b-data__item"><span>100000</span></div>
+						</div>
+						<div class="b-info-text">
+							<span>показы</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="b-graph">
+					<canvas id="canvas_graph" height="356" width="900"></canvas>
+				</div>
+
+				<div class="b-info">
+
+					<div class="b-info__item b-info__item--yellow b-info__item--left">
+						<div class="b-info-text b-info-text--wight1">
+							<span>доход, руб</span>
+						</div>
+						<div class="b-info-data">
+							<div class="b-data__item"><span>400000</span></div>
+							<div class="b-data__item"><span>300000</span></div>
+							<div class="b-data__item"><span>200000</span></div>
+							<div class="b-data__item"><span>100000</span></div>
+						</div>
+					</div>
+
+					<div class="b-info__item b-info__item--gray b-info__item--left">
+						<div class="b-info-text b-info-text--wight2">
+							<span><b>регистрации,</b> <b>депозиты</b></span>
+						</div>
+						<div class="b-info-data">
+							<div class="b-data__item"><span>400</span></div>
+							<div class="b-data__item"><span>300</span></div>
+							<div class="b-data__item"><span>200</span></div>
+							<div class="b-data__item"><span>100</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="b-control">
+					<div class="b-check-container">
+						<div class="check-box">
+							<input id="partn1" type="checkbox">
+							<label for="partn1">Показы</label>
+						</div>
+						<div class="check-box">
+							<input id="partn2" type="checkbox">
+							<label class="red" for="partn2">Клики</label>
+						</div>
+						<div class="check-box">
+							<input id="partn3" type="checkbox">
+							<label class="green" for="partn3">Регистрации</label>
+						</div>
+						<div class="check-box">
+							<input id="partn4" type="checkbox">
+							<label class="violet" for="partn4">Новые депозиты</label>
+						</div>
+						<div class="check-box">
+							<input id="partn5" type="checkbox">
+							<label class="yellow" for="partn5">Доход</label>
+						</div>
+					</div>
+
+					<div class="select-box norm">
+						<select id="s_valuta" class="s_valuta">
+							<option></option>
+							<option>пункт1</option>
+							<option>пункт2</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col col-16">
+
+					<!-- .table -->
+					<div class="table">
+						<h1>Быстрая статистика</h1>
+
+						<select class="s_period" name="ot"  placeholder="Период">
+							<option></option>
+							<option>Сегодня</option>
+							<option>Завтра</option>
+						</select>
+
+						<table class="col-seven">
+							<thead>
+								<tr>
+									<th>Валюта</th>
+									<th>Показы</th>
+									<th>Клики</th>
+									<th>Регистрации</th>
+									<th>Новые депозиты</th>
+									<th>Прибыль компании</th>
+									<th>Комиссия партнерам</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>RUB</td>
+									<td>253464</td>
+									<td>13244680</td>
+									<td>1868</td>
+									<td>46447</td>
+									<td>4688447</td>
+									<td>4600447</td>
+								</tr>
+								<tr>
+									<td>USD</td>
+									<td>49219</td>
+									<td>947472</td>
+									<td>647</td>
+									<td>8068</td>
+									<td>2646</td>
+									<td>86785673</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- end .table -->
+
+					<!-- .table -->
+					<div class="table table-sort">
+						<h1>Топ партнеров</h1>
+						<table class="col-seven">
+							<thead>
+								<tr>
+									<th>ID партнера</th>
+									<th class="col-sort">Показы <i>верх</i><i>низ</i></th>
+									<th class="col-sort">Клики <i>верх</i><i>низ</i></th>
+									<th class="col-sort">Регистрации <i>верх</i><i>низ</i></th>
+									<th class="col-sort">Новые депозиты <i>верх</i><i>низ</i></th>
+									<th class="col-sort">Прибыль компании <i>верх</i><i>низ</i></th>
+									<th class="col-sort">Комиссия партнеру <i>верх</i><i>низ</i></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12</td>
+									<td>253464</td>
+									<td>13244680</td>
+									<td>1868</td>
+									<td>46447</td>
+									<td>4688447</td>
+									<td>4600447</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>49219</td>
+									<td>947472</td>
+									<td>647</td>
+									<td>8068</td>
+									<td>2646</td>
+									<td>86785673</td>
+								</tr>
+								<tr>
+									<td>431</td>
+									<td>2378</td>
+									<td>894670</td>
+									<td>628</td>
+									<td>37847</td>
+									<td>3183</td>
+									<td>31864</td>
+								</tr>
+								<tr>
+									<td>78</td>
+									<td>848</td>
+									<td>877342</td>
+									<td>573</td>
+									<td>837</td>
+									<td>213618</td>
+									<td>6517</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>758</td>
+									<td>408921</td>
+									<td>504</td>
+									<td>3299</td>
+									<td>427367</td>
+									<td>13981369</td>
+								</tr>
+								<tr>
+									<td>23</td>
+									<td>630</td>
+									<td>297645</td>
+									<td>492</td>
+									<td>82372</td>
+									<td>1356</td>
+									<td>12748</td>
+								</tr>
+								<tr>
+									<td>44</td>
+									<td>502</td>
+									<td>37894</td>
+									<td>458</td>
+									<td>4782</td>
+									<td>3426243</td>
+									<td>174691</td>
+								</tr>
+								<tr>
+									<td>544</td>
+									<td>464</td>
+									<td>27848</td>
+									<td>399</td>
+									<td>1763</td>
+									<td>342896</td>
+									<td>5493850</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>351</td>
+									<td>20474</td>
+									<td>214</td>
+									<td>95428</td>
+									<td>4691</td>
+									<td>123861</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>20</td>
+									<td>16493</td>
+									<td>82</td>
+									<td>2566</td>
+									<td>187</td>
+									<td>356</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="s-bottm">
+							<select class="s_valuta" name="ot"  placeholder="Валюта">
+								<option></option>
+								<option>usd</option>
+								<option>грн</option>
+							</select>
+						</div>
+					</div><!-- end .table -->
+
+					<!-- .table -->
+					<div class="table table-sort">
+						<h1>Топ промо-материалов</h1>
+						<table class="col-eight">
+							<thead>
+								<tr>
+									<th>ID промо</th>
+									<th>Превью</th>
+									<th class="col-sort">Показы<i>верх</i><i>низ</i></th>
+									<th class="col-sort">Клики<i>верх</i><i>низ</i></th>
+									<th class="col-sort">CTR, %<i>верх</i><i>низ</i></th>
+									<th class="col-sort">Регистрации<i>верх</i><i>низ</i></th>
+									<th class="col-sort">Новые депозиты<i>верх</i><i>низ</i></th>
+									<th class="col-sort">Прибыль компании<i>верх</i><i>низ</i></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>23</td>
+									<td><img src="img/del/table/table.jpg" height="60" width="72" alt=""></td>
+									<td>13244680</td>
+									<td>1868</td>
+									<td>46447</td>
+									<td>4688447</td>
+									<td>4600447</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>44</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>947472</td>
+									<td>647</td>
+									<td>8068</td>
+									<td>2646</td>
+									<td>86785673</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>544</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>894670</td>
+									<td>628</td>
+									<td>37847</td>
+									<td>3183</td>
+									<td>31864</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>877342</td>
+									<td>573</td>
+									<td>837</td>
+									<td>213618</td>
+									<td>6517</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>408921</td>
+									<td>504</td>
+									<td>3299</td>
+									<td>427367</td>
+									<td>13981369</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>297645</td>
+									<td>492</td>
+									<td>82372</td>
+									<td>1356</td>
+									<td>12748</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>37894</td>
+									<td>458</td>
+									<td>4782</td>
+									<td>3426243</td>
+									<td>174691</td>
+									<td>13244680</td>
+								</tr>
+								<tr>
+									<td>431</td>
+									<td><img src="img/del/table/table.jpg" alt=""></td>
+									<td>27848</td>
+									<td>399</td>
+									<td>1763</td>
+									<td>342896</td>
+									<td>5493850</td>
+									<td>13244680</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="s-bottm">
+							<select class="s_valuta" name="ot"  placeholder="Валюта">
+								<option></option>
+								<option>usd</option>
+								<option>грн</option>
+							</select>
+						</div>
+					</div><!-- end .table -->
+
+				</div>
+
+				<div class="col col-4">
+					<aside>
+						<section class="aside-links">
+							<span>Ожидают модерации: <b>5</b></span>
+							<span class="dotted"><a href="">Новые сообщения: <b>0</b></a></span>
+							<span class="err">Ошибки импорта: <b>2</b></span>
+							<span>Остановка активности партнеров: <b>7</b></span>
+						</section>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="fon-line fon-line-foot">
+		<div class="container">
+			<p>Работает на <span>karachuplya</span></p>
+		</div>
+	</footer>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.22/script/jquery.jscrollpane.min.js"></script>
+	<script src="js/chart.min.js"></script>
+
+	<script src="js/moment.js"></script>
+	<script src="js/daterangepicker.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
+

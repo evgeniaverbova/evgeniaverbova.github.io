@@ -1,0 +1,155 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Карта страниц</title>
+
+	<style type="text/css">
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+		}
+
+		body {
+			background: url(img/del/slide-000.jpg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.pre {
+			margin: auto;
+			padding: 30px 30px;
+			width: 50%;
+			background: rgba(242,242,242, .8);
+			border-radius: 5px;
+			margin: 20px auto;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			padding: 13px 0;
+			background: #c3dbe7;
+			border: 1px solid #9ccbe2;
+			margin: 10px 0;
+			text-align: center;
+			border-radius: 5px;
+			font-family: 'Ubuntu', sans-serif;
+			overflow: hidden;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		/*.pre > ul > li > a:not(:only-child){
+			background: red
+		}
+		*/
+
+		a + ul li a:before {
+			content: "";
+			position: absolute;
+			width: 1px;
+			height: 33px;
+			background: #9ccbe2;
+			top: -4px;
+			bottom: 0;
+			left: -9px;
+			right: 0;
+		}
+
+		a + ul li {
+			position: relative;
+			right: -15px;
+		}
+
+		a + ul li a {
+			width: 80%;
+		}
+
+		a {
+			font-size: 16px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #31708f;
+			transition: all .3s ease-out;
+		}
+
+		a:hover,
+		a.red:hover,
+		a.purple:hover,
+		a.green:hover {
+			background: #e6e6e6;
+			border: 1px solid #adadad;
+			color: #333333;
+		}
+
+		a:hover:before {
+			background: #d8d8d8;
+		}
+
+		a.red {
+			background: #abecff;
+			border: 1px solid #8acee2;
+			color: #5391a3;
+		}
+
+		a.purple {
+			background: #dec3e7;
+			border: 1px solid #d3a5e2;
+			color: #b945e0;
+		}
+
+		a.green {
+			background: #c3e7c8;
+			border: 1px solid #98d2a0;
+			color: #479e53;
+		}
+
+		.box {
+			padding: 1px;
+		}
+
+		@media (max-width: 320px) {
+
+			a {
+				font-size: 10px;
+			}
+
+			.pre {
+				width: 80%;
+			}
+		}
+
+	  </style>
+</head>
+<body>
+	<div class="box">
+		<div class="pre">
+			<ul>
+				<li><a href="main.html">main</a></li>
+				<li><a href="live.html">live</a></li>
+				<li><a href="casino.html">casino</a></li>
+				<li><a href="registration.html">registration</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

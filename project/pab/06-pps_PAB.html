@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/libs.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<title>page</title>
+</head>
+
+<body>
+	<!-- begin header-->
+	<header>
+		<div class="container">
+			<div class="b-img-header">
+				<div class="b-logo">
+					<a href="/"><img src="img/logo.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="b-bg-header">
+				<div class="b-menu">
+					<nav>
+						<ul>
+							<li><a href="">Live</a></li>
+							<li><a href="">Линия</a></li>
+							<li><a href="">Результаты</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">Клубы</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="b-info"><span>Телефон службы поддержки</span>
+					<p>0 (800) 50-19-05</p>
+					<ul>
+						<li><a href="" class="header__vk">vk</a></li>
+						<li><a href="" class="header__fb">fb</a></li>
+						<li><a href="" class="header__tw">tw</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header-->
+	<!-- begin pps-->
+	<section class="b-pps">
+		<div class="container">
+			<h2>пункт приёма ставок</h2>
+			<div class="b-pps__control">
+				<div class="b-select"><select id="s_country"><option></option><option value="1">пункт1</option><option value="2">пункт2</option><option value="3">пункт3</option><option value="4">пункт4</option><option value="5">пункт5</option></select><select id="s_region"><option></option><option value="1">пункт1</option><option value="2">пункт2</option><option value="3">пункт3</option><option value="4">пункт4</option><option value="5">пункт5</option></select>
+					<select
+									id="s_city">
+						<option></option>
+						<option value="1">пункт1</option>
+						<option value="2">пункт2</option>
+						<option value="3">пункт3</option>
+						<option value="4">пункт4</option>
+						<option value="5">пункт5</option>
+						</select>
+				</div>
+				<div class="b-check">
+					<div class="check__row">
+						<div class="check__item"><input id="in_e" type="checkbox" /><label for="in_e">Трансляции</label></div>
+						<div class="check__item"><input id="in_b" type="checkbox" /><label for="in_b">BetGames.TV</label></div>
+						<div class="check__item"><input id="in_s" type="checkbox" /><label for="in_s">Гостевой компьютер</label></div>
+					</div>
+					<div class="check__row">
+						<div class="check__item"><input id="in_d" type="checkbox" /><label for="in_d">Скачки</label></div>
+						<div class="check__item"><input id="in_j" type="checkbox" /><label for="in_j">Кофе и Чай</label></div>
+						<div class="check__item"><input id="in_k" type="checkbox" /><label for="in_k">Продажа пива</label></div>
+					</div>
+				</div>
+				<div class="b-search">
+					<div class="b-search__item"><input type="search" placeholder="Начинайте вводить название города" /><button type="submit"></button></div>
+				</div>
+				<div class="b-check__btn">
+					<div class="check__item"><input id="che_list" type="checkbox" /><label for="che_list">Списком</label></div>
+					<div class="check__item"><input id="che_map" type="checkbox" /><label for="che_map">На карте</label></div>
+				</div>
+			</div>
+			<div class="b-pps__map">
+				<div id="map"></div>
+			</div>
+			<div class="b-pps__list">
+				<h3>г. Астана</h3>
+				<table>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+					<tr>
+						<td>ул. Профсоюзная д.128, к.1</td>
+						<td><i class="icon-tv"></i><i class="icon-clock"></i><i class="icon-"><!-- beer--></i><i class="icon-coffee"></i><i class="icon-monitor"></i><i class="icon-races"></i></td>
+						<td>0 (800) 50-19-05</td>
+						<td><i class="icon-around"></i></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	<!-- end pps-->
+	<!-- begin tv-news-->
+	<section class="b-tvnews">
+		<div class="container">
+			<h2>1xbet на tv</h2>
+			<div class="b-tvnews__item">
+				<a href="">
+					<div class="b-tvnews__img"><img src="img/del/tvnews/1.jpg" alt="" /></div>
+					<div class="b-tvnews__text">
+						<p>Картавый Прогноз 1XBet! Олд Траффод Бэкхем, Рональдо и друзья!</p>
+					</div>
+				</a>
+			</div>
+			<div class="b-tvnews__item">
+				<a href="">
+					<div class="b-tvnews__img"><img src="img/del/tvnews/2.jpg" alt="" /></div>
+					<div class="b-tvnews__text">
+						<p>Картавый Прогноз 1XBet! Олд Траффод Бэкхем, Рональдо и друзья!</p>
+					</div>
+				</a>
+			</div>
+			<div class="b-tvnews__item">
+				<a href="">
+					<div class="b-tvnews__img"><img src="img/del/tvnews/3.jpg" alt="" /></div>
+					<div class="b-tvnews__text">
+						<p>Картавый Прогноз 1XBet! Олд Траффод Бэкхем, Рональдо и друзья!</p>
+					</div>
+				</a>
+			</div>
+			<div class="b-tvnews__item">
+				<a href="">
+					<div class="b-tvnews__img"><img src="img/del/tvnews/4.jpg" alt="" /></div>
+					<div class="b-tvnews__text">
+						<p>Картавый Прогноз 1XBet! Олд Траффод Бэкхем, Рональдо и друзья!</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end tv-news-->
+	<!-- begin footer-->
+	<footer>
+		<div class="container">
+			<div class="b-footer-logo">
+				<a href="/"><img src="img/logo.png" alt="" /></a>
+			</div>
+			<div class="b-footer-menu">
+				<nav>
+					<ul>
+						<li><a href="">Линия</a></li>
+						<li><a href="">live</a></li>
+						<li><a href="">multi-live</a></li>
+						<li><a href="">киберспорт</a></li>
+						<li><a href="">фентезифутбол</a></li>
+						<li><a href="">multi-live</a></li>
+						<li><a href="">киберспорт</a></li>
+						<li><a href="">фентезифутбол</a></li>
+						<li><a href="">бетконструктор</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="b-footer-info"><span>Телефон службы поддержки</span>
+				<p>0 (800) 50-19-05</p>
+				<ul>
+					<li><a href="" class="header__vk">vk</a></li>
+					<li><a href="" class="header__fb">fb</a></li>
+					<li><a href="" class="header__tw">tw</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/library.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

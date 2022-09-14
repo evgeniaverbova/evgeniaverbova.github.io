@@ -1,0 +1,35 @@
+{
+	"tablInfo":
+	{
+		"Results": "1500",
+		"Page":
+		{
+			"from":"1",
+			"to":"10"
+		}
+	},
+	"line":
+	{
+		"id":
+		{
+			"type":"1",
+			"linkId":"https://сайт 1"
+		},
+		"Site": "https://сайт клиента/регистрация",
+		"SubID": "shapka saita",
+		"Landing": "https://сайт клиента/регистрация?партнерская",
+		"reference": "Maria"
+	},
+	"line":
+	{
+		"id":
+		{
+			"type":"1",
+			"linkId":"https://сайт 1"
+		},
+		"Site": "https://сайт клиента/регистрация",
+		"SubID": "shapka saita",
+		"Landing": "https://сайт клиента/регистрация?партнерская",
+		"reference": "Maria"
+	}
+}

@@ -1,0 +1,89 @@
+@font-face {
+	font-family: "iFont";
+	src: url('../fonts/iFont/iFont.eot');
+	src: url('../fonts/iFont/iFont.eot?#iefix') format('eot'),
+		url('../fonts/iFont/iFont.woff') format('woff'),
+		url('../fonts/iFont/iFont.ttf') format('truetype'),
+		url('../fonts/iFont/iFont.svg#iFont') format('svg');
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "iFont";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-1:before {
+	content: "\E001";
+}
+
+.icon-2:before {
+	content: "\E002";
+}
+
+.icon-3:before {
+	content: "\E003";
+}
+
+.icon-approval:before {
+	content: "\E004";
+}
+
+.icon-arrow:before {
+	content: "\E005";
+}
+
+.icon-cross-mark:before {
+	content: "\E006";
+}
+
+.icon-face:before {
+	content: "\E007";
+}
+
+.icon-gas:before {
+	content: "\E008";
+}
+
+.icon-google:before {
+	content: "\E009";
+}
+
+.icon-gps:before {
+	content: "\E00A";
+}
+
+.icon-location:before {
+	content: "\E00B";
+}
+
+.icon-multiple:before {
+	content: "\E00C";
+}
+
+.icon-procent:before {
+	content: "\E00D";
+}
+
+.icon-right:before {
+	content: "\E00E";
+}
+
+.icon-surveillance:before {
+	content: "\E00F";
+}
+
+.icon-time:before {
+	content: "\E010";
+}
+
+.icon-twit:before {
+	content: "\E011";
+}

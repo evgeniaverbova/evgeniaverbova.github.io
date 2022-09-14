@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<title>title</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	 <!-- с initial-scale=1 -->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="infoMenu">
+				<div class="langBoxChange fr">
+					<div class="selectedLang langIco _ru">ru</div>
+
+					<ul class="langBoxChange_ul clear" style="display: none;">
+						<li class="fl"><a title="" href="#"><span class="langIco _en">en</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ru">ru</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _es">es</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ge">ge</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _de">de</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _by">by</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ir">ir</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _kr">kr</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _jp">jp</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _bg">bg</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _fl">fl</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _mk">mk</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ae">ae</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _cz">cz</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _fr">fr</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _mn">mn</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _it">it</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _gr">gr</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _hr">hr</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _pl">pl</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _pt">pt</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ro">ro</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _dk">dk</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _sk">sk</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _rs">rs</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _se">se</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _tr">tr</span></a></li>
+						<li class="fl"><a title="" href="#"><span class="langIco _ch">ch</span></a></li>
+					</ul>
+				</div>
+				<a class="fr btn yellow" href="#">Join now</a>
+
+				<div class="join_now_box">
+					<a class="fr btn blueArrow" href="javascript:void(0);"></a>
+					<a class="fr btn blue" href="javascript:void(0);">Log in</a>
+
+					<div class="loginDropTop_div">
+						<input type="text" value="Ваш E-mail или ID" onfocus="if(this.value=='Ваш E-mail или ID'){this.value='';}" onblur="if(this.value==''){this.value='Ваш E-mail или ID';}" onkeypress="if(keyPress(event)==13) {connect();return false;}" class="keyboardInput" name="userLogin" id="userLogin">
+						<input type="password" class="keyboardInput" name="userPassword" value="password" onfocus="if(this.value=='password'){this.value='';}" onblur="if(this.value==''){this.value='password';}" onkeypress="if(keyPress(event)==13) {connect();return false;}" id="userPassword">
+						<div class="clearSave">
+							<input type="checkbox" name="chSaveMe" id="chSaveMe2" class="big_check">
+							<label title="Запомнить" for="chSaveMe2">Remember</label>
+							<a  href="#" class="forgot_pass_main">Forgot your password?</a>
+						</div>
+						<a id="userConButton" href="javascript:void(0);" class="enter_button_main">Log in</a>
+						<div class="socAuthTxt">Ypu can login via:</div>
+						<ul class="all_soc_enter">
+							<li><a class="fb_en">FaceBook</a></li>
+							<li><a class="gp_en">Google +</a></li>
+							<li><a class="vk_en">Twitter</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<a class="fr link" href="#">Live Betting</a>
+				<a class="fr link" href="#">Sports</a>
+			</div>
+			<div class="topMenu">
+				<div class="logo">
+					<a href="/"><img src="img/logo.png" alt=""></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a class="active" href="#">Slots</a></li>
+						<li><a href="#">Live Casino</a></li>
+						<li><a href="#">Blackjack</a></li>
+						<li><a href="#">Roulette</a></li>
+						<li><a href="#">Video Poker</a></li>
+						<li><a href="#">Table Games</a></li>
+						<li><a href="#">Keno</a></li>
+						<li><a href="#">TV Games</a></li>
+						<li><a href="#">Other Games</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+	<section class='registration'>
+		<div class="container">
+			<div class="reg-content">
+				<div class="regBoxTab">
+					<h1>Select your preferred method of registration:</h1>
+
+					<div class="TabLinks">
+						<ul>
+							<li><span class="active tabs_1">By phone number</span></li>
+							<li><span class='tabs_2'>By e-mail</span></li>
+							<li><span class='tabs_3'>Social network</span></li>
+						</ul>
+					</div>
+
+					<div class="TabBlocks">
+						<div class="TabItem active" id="tabs_1">
+							<h2>One minute registration!</h2>
+							<form id="tab-form-phone" class="phone-form">
+
+								<fieldset>
+									<ul>
+										<li id="loginWrapper">
+											<span class="title">Phone number<span>*</span><div class="errorMsg" id="answf1"></div></span>
+											<div>
+												<div class="activeCountry regionRU"></div>
+												<input type="text" title="Неверный номер" id="reg_tel_num" name="reg_tel_num" value="+7" class="phoneCountry keyboardInput" vki_attached="true">
+												<ul class="countriesList" style="display: none;">
+													<li data-codetel="+7" data-code="RU" class="counrtyRU">
+														<div class="itemFlag"></div>
+														<div class="itemName">Россия</div>
+														<div class="itemCode">+7</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+380" data-code="UA" class="counrtyUA">
+														<div class="itemFlag"></div>
+														<div class="itemName">Украина</div>
+														<div class="itemCode">+380</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+375" data-code="BY" class="counrtyBY">
+														<div class="itemFlag"></div>
+														<div class="itemName">Беларусь</div>
+														<div class="itemCode">+375</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+77" data-code="KZ" class="counrtyKZ">
+														<div class="itemFlag"></div>
+														<div class="itemName">Казахстан</div>
+														<div class="itemCode">+77</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+996" data-code="KG" class="counrtyKG">
+														<div class="itemFlag"></div>
+														<div class="itemName">Кыргызстан</div>
+														<div class="itemCode">+996</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+994" data-code="AZ" class="counrtyAZ">
+														<div class="itemFlag"></div>
+														<div class="itemName">Азербайджан</div>
+														<div class="itemCode">+994</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+373" data-code="MD" class="counrtyMD">
+														<div class="itemFlag"></div>
+														<div class="itemName">Молдавия</div>
+														<div class="itemCode">+373</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+995" data-code="GE" class="counrtyGE">
+														<div class="itemFlag"></div>
+														<div class="itemName">Грузия</div>
+														<div class="itemCode">+995</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+374" data-code="AM" class="counrtyAM">
+														<div class="itemFlag"></div>
+														<div class="itemName">Армения</div>
+														<div class="itemCode">+374</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+992" data-code="TJ" class="counrtyTJ">
+														<div class="itemFlag"></div>
+														<div class="itemName">Такджикистан</div>
+														<div class="itemCode">+992</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+507" data-code="PA" class="counrtyPA">
+														<div class="itemFlag"></div>
+														<div class="itemName">Панама</div>
+														<div class="itemCode">+507</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+44" data-code="GB" class="counrtyGB">
+														<div class="itemFlag"></div>
+														<div class="itemName">Великобритания</div>
+														<div class="itemCode">+44</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+370" data-code="LT" class="counrtyLT">
+														<div class="itemFlag"></div>
+														<div class="itemName">Литва</div>
+														<div class="itemCode">+370</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+972" data-code="IL" class="counrtyIL">
+														<div class="itemFlag"></div>
+														<div class="itemName">Израиль</div>
+														<div class="itemCode">+972</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+90" data-code="TR" class="counrtyTR">
+														<div class="itemFlag"></div>
+														<div class="itemName">Турция</div>
+														<div class="itemCode">+90</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+84" data-code="VN" class="counrtyVN">
+														<div class="itemFlag"></div>
+														<div class="itemName">Вьетнам</div>
+														<div class="itemCode">+84</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+371" data-code="LV" class="counrtyLV">
+														<div class="itemFlag"></div>
+														<div class="itemName">Латвия</div>
+														<div class="itemCode">+371</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+91" data-code="IN" class="counrtyIN">
+														<div class="itemFlag"></div>
+														<div class="itemName">Индия</div>
+														<div class="itemCode">+91</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+66" data-code="TH" class="counrtyTH">
+														<div class="itemFlag"></div>
+														<div class="itemName">Таиланд</div>
+														<div class="itemCode">+66</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+1" data-code="US" class="counrtyUS">
+														<div class="itemFlag"></div>
+														<div class="itemName">США</div>
+														<div class="itemCode">+1</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+372" data-code="EE" class="counrtyEE">
+														<div class="itemFlag"></div>
+														<div class="itemName">Эстония</div>
+														<div class="itemCode">+372</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+81" data-code="JP" class="counrtyJP">
+														<div class="itemFlag"></div>
+														<div class="itemName">Япония</div>
+														<div class="itemCode">+81</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+998" data-code="UZ" class="counrtyUZ">
+														<div class="itemFlag"></div>
+														<div class="itemName">Узбекистан</div>
+														<div class="itemCode">+998</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+82" data-code="KR" class="counrtyKR">
+														<div class="itemFlag"></div>
+														<div class="itemName">Южная Корея</div>
+														<div class="itemCode">+82</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+34" data-code="ES" class="counrtyES">
+														<div class="itemFlag"></div>
+														<div class="itemName">Испания</div>
+														<div class="itemCode">+34</div>
+														<div class="clearBoth"></div>
+													</li>
+
+													<li data-codetel="+98" data-code="IR" class="counrtyIR">
+														<div class="itemFlag"></div>
+														<div class="itemName">Иран</div>
+														<div class="itemCode">+98</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+49" data-code="DE" class="counrtyDE">
+														<div class="itemFlag"></div>
+														<div class="itemName">Германия</div>
+														<div class="itemCode">+49</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+39" data-code="IT" class="counrtyIT">
+														<div class="itemFlag"></div>
+														<div class="itemName">Италия</div>
+														<div class="itemCode">+39</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+359" data-code="BG" class="counrtyBG">
+														<div class="itemFlag"></div>
+														<div class="itemName">Болгария</div>
+														<div class="itemCode">+359</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+993" data-code="TM" class="counrtyTM">
+														<div class="itemFlag"></div>
+														<div class="itemName">Туркменистан</div>
+														<div class="itemCode">+993</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+33" data-code="FR" class="counrtyFR">
+														<div class="itemFlag"></div>
+														<div class="itemName">Франция</div>
+														<div class="itemCode">+33</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+421" data-code="SK" class="counrtySK">
+														<div class="itemFlag"></div>
+														<div class="itemName">Словакия</div>
+														<div class="itemCode">+421</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+48" data-code="PL" class="counrtyPL">
+														<div class="itemFlag"></div>
+														<div class="itemName">Польша</div>
+														<div class="itemCode">+48</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+420" data-code="CZ" class="counrtyCZ">
+														<div class="itemFlag"></div>
+														<div class="itemName">Чехия</div>
+														<div class="itemCode">+420</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+30" data-code="GR" class="counrtyGR">
+														<div class="itemFlag"></div>
+														<div class="itemName">Греция</div>
+														<div class="itemCode">+30</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+61" data-code="AU" class="counrtyAU">
+														<div class="itemFlag"></div>
+														<div class="itemName">Австралия</div>
+														<div class="itemCode">+61</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+40" data-code="RO" class="counrtyRO">
+														<div class="itemFlag"></div>
+														<div class="itemName">Румыния</div>
+														<div class="itemCode">+61</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+840" data-code="AB" class="counrtyAB">
+														<div class="itemFlag"></div>
+														<div class="itemName">Абхазия</div>
+														<div class="itemCode">+840</div>
+														<div class="clearBoth"></div>
+													</li>
+													<li data-codetel="+1" data-code="BM" class="counrtyBM">
+														<div class="itemFlag"></div>
+														<div class="itemName">Бермуды</div>
+														<div class="itemCode">+1</div>
+														<div class="clearBoth"></div>
+													</li>
+												</ul>
+											</div>
+											<span class="help">Leave your phone number if you wish to receive our company news</span>
+										</li>
+
+
+										<li>
+											<span class="title">Password<span>*</span><div class="errorMsg" id="answ3"></div></span>
+											<div>
+												<input type="password" title="Введите пароль" value="" name="reg_pass1" id="reg_pass1" class="keyboardInput" vki_attached="true">
+											</div>
+										</li>
+
+									</ul>
+								</fieldset>
+
+								<fieldset>
+									<ul>
+										<li>
+											<span class="title">Currency<span>*</span><div class="errorMsg" id="answ15"></div></span>
+											<span id="div_country">
+												<select onchange="jQuery('#reg_tel_code').attr('value', '+'+this.options[selectedIndex].getAttribute('code')); get_region();" id="all_country" name="reg_country">
+												<option selected="selected" disabled="disabled">Select currency</option>
+												<option code="7" value="1">Россия</option>
+												<option code="380" value="2">Украина</option>
+												<option code="375" value="22">Беларусь</option>
+												<option code="77" value="82">Казахстан</option>
+												<option code="373" value="122">Молдова</option>
+												<option code="" value="3">Абхазия</option>
+												<option code="61" value="4">Австралия</option>
+												<option code="675" value="232">Австралия и Океания</option>
+												<option code="43" value="5">Австрия</option>
+												<option code="994" value="6">Азербайджан</option>
+												<option code="8956" value="229">Азия</option>
+												<option code="355" value="7">Албания</option>
+												<option code="213" value="8">Алжир</option>
+												<option code="44" value="231">Англия</option>
+												<option code="244" value="9">Ангола</option>
+												<option code="81" value="218">Япония</option>
+												</select>
+											</span>
+											<span class="help">The currency you select will affect your deposit and withdrawal transaction methods. Once set, account currency cannot be changed.</span>
+										</li>
+
+										<li>
+											<span class="title">Re-enter password<span>*</span><div class="errorMsg" id="answ4"></div></span>
+											<div>
+												<input type="password" title="Пароли не совпадают" value="" name="reg_pass2" id="reg_pass2" class="keyboardInput" vki_attached="true">
+											</div>
+										</li>
+
+									</ul>
+								</fieldset>
+
+								<div class="rules">By clicking this button you agree with the <a href="#">Terms and Conditions</a> of the company and confirm that this is your first account.</div>
+								<span id="buttonReg"><a href="#">Join Now</a></span>
+
+							</form>
+
+						</div>
+						<div class="TabItem" id="tabs_2">
+							<h2>Full registration will only take a couple of minutes.</h2>
+							<form id="tab-form-mail" novalidate="novalidate">
+
+								<div class="field">
+									<fieldset>
+										<legend>Personal info</legend>
+										<ul>
+											<li>
+												<span class="title">Select country<span>*</span><div id="answ15" class="errorMsg"></div></span>
+												<span id="div_country">
+													<select name="reg_country" id="all_country" onchange="jQuery('#reg_tel_code').attr('value', '+'+this.options[selectedIndex].getAttribute('code')); get_region();">
+														<option disabled="disabled" selected="selected">Select country</option>
+														<option value="1" code="7">Russia</option>
+														<option value="2" code="380">Ukraine</option>
+														<option value="22" code="375">Belarus</option>
+														<option value="82" code="7">Kazakhstan</option>
+														<option value="122" code="373">Moldova</option>
+														<option value="3" code="">Abkhazia</option>
+														<option value="4" code="61">Australia</option>
+													</select>
+												</span>
+												<span class="help">Enter the country of your permanent residence</span>
+											</li>
+
+											<li id="regions">
+												<span class="title">Region<span>*</span>
+													<div id="answ16" class="errorMsg"></div>
+												</span>
+												<span id="div_region">
+													<select name="reg_region" id="all_region" title="Select region">
+														<option selected="selected" value="0">Select region</option>
+													</select>
+												</span>
+												<span class="help">Region of residence</span>
+											</li>
+
+											<li id="cities">
+												<span class="title">Select city<span>*</span>
+													<div id="answ17" class="errorMsg"></div>
+												</span>
+												<span id="div_city">
+												<select name="reg_city" id="all_city" title="Select city">
+													<option selected="selected" value="0">Select city</option>
+												</select>
+												</span>
+													<span class="help">Town/city of residence
+												</span>
+											</li>
+
+											<li>
+												<span class="title">Your name<span>*</span>
+													<div id="answ5" class="errorMsg"></div>
+												</span>
+												<div>
+													<input class="keyboardInput" type="text" id="reg_name" name="reg_name" value="" title="Enter Name">
+												</div>
+												<span class="help">Your name as stated in your passport. Enter in either Russian or English</span>
+											</li>
+
+											<li>
+												<span class="title">Your surname<span>*</span>
+													<div id="answ6" class="errorMsg"></div>
+												</span>
+												<div>
+													<input class="keyboardInput" type="text" id="reg_surname" name="reg_surname" value="" title="Enter Surname">
+												</div>
+												<span class="help">Your surname as stated in your passport. Enter in either Russian or English</span>
+											</li>
+										</ul>
+									</fieldset>
+
+									<fieldset>
+										<legend>User account info</legend>
+
+										<ul>
+											<li>
+												<span class="title">Currency<span>*</span>
+													<div id="answ18" class="errorMsg"></div>
+												</span>
+												<div>
+													<select id="reg_type_valuta" name="reg_type_valuta" title="Select currency">
+														<option selected="selected" disabled="disabled" value="0">Select currency</option>
+														<option value="1">RUB (Russian rouble)</option>
+														<option value="3">UAH (Ukrainian hryvnia)</option>
+														<option value="10">USD (United States dollar)</option>
+														<option value="2">BYR (Belarusian rouble)</option>
+														<option value="9">KZT (Kazakhstani tenge)</option>
+														<option value="12">EUR (Euro)</option>
+													</select>
+												</div>
+												<span class="help">The currency you select will affect your deposit and withdrawal transaction methods. Once set, account currency cannot be changed.</span>
+											</li>
+
+											<li>
+												<span class="title">Password<span>*</span>
+													<div id="answ3" class="errorMsg"></div>
+												</span>
+												<div>
+													<input class="keyboardInput" autocomplete="off" type="password" id="reg_pass1" onchange="checkPass()" name="reg_pass1" value="" title="Enter password">
+													<div class="passwProgress"></div>
+													<div class="helpW">
+														<ol class="red">
+															<li>Password must contain at least 8 symbols</li>
+															<li>Password must contain lowercase letters a-z, or а-я</li>
+															<li>Password must contain lowercase letters A-Z, or А-Я</li>
+															<li>Password must contain numbers 0-9</li>
+															<li>Password must not contain symbols [&lt;&gt;\"'&amp;+]</li>
+														</ol>
+													</div>
+												</div>
+											</li>
+
+											<li>
+												<span class="title">Re-enter password<span>*</span>
+													<div id="answ4" class="errorMsg"></div>
+												</span>
+												<div>
+													<input class="keyboardInput" type="password" id="reg_pass2" name="reg_pass2" value="" title="Passwords do not match">
+												</div>
+											</li>
+
+											<li>
+												<span class="title">E-mail<span>*</span>
+													<div id="answ1" class="errorMsg"></div>
+												</span>
+												<div>
+													<input class="keyboardInput" type="text" autocomplete="off" id="reg_email" placeholder="name@mail.ru" name="reg_email" title="Enter E-mail">
+												</div>
+												<span class="help">Enter a valid e-mail address. A confirmation e-mail will be sent to this address. This address will be used in future for communicating with you</span>
+											</li>
+
+											<li>
+												<span class="title">Phone number
+														<div id="answ21" class="errorMsg"></div>
+												</span>
+												<div>
+													<input type="text" id="reg_tel_code" name="reg_tel_code" value="+7" readonly="" title="Wrong number">
+													<input class="keyboardInput" type="text" autocomplete="off" id="reg_tel_num" placeholder="9001234567" name="reg_tel_num" title="Wrong number">
+												</div>
+												<span class="help">Leave your phone number if you wish to receive our company news</span>
+											</li>
+										</ul>
+									</fieldset>
+								</div>
+								<div class="extra_check">
+									<input type="checkbox" id="over18" name="over18">
+									<label for="over18">I am older than 18<span>*</span></label>
+								</div>
+								<div class="rules">By clicking this button you agree with the <a href="/information/rules/">Terms and Conditions</a> of the company and confirm that this is your first account.</div>
+								<span id="buttonReg"><a href="" class="submit_registr">Join Now</a></span>
+								<div id="loadGIF" style="display: none; text-align: center; margin-top: 20px;">
+									<img src="/images/loading.gif">
+								</div>
+							</form>
+
+						</div>
+						<div class="TabItem " id="tabs_3">
+							<h2>One minute registration!</h2>
+
+							<div class="regist_from_soc">
+								<fieldset>
+									<p>Connect your 1xBet account to one or more social network accounts. Registration will only take seconds!</p>
+									<p>Having selected a social network, allow to use your profile info for 1xBet registration in a popup window. After authorization, registration will be completed automatically and you will receive a login and a password for the 1xBet.com website.</p>
+									<p>In future, you will be able to log in to the website in two clicks via your social network account or using your login and password.</p>
+								</fieldset>
+								<fieldset>
+									<ul>
+										<li><a href="#" class="tw_reg">Twitter</a></li>
+										<li><a href="#" class="gp_reg">Google +</a></li>
+										<li><a href="#" class="fb_reg">FaceBook</a></li>
+									</ul>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<p class="overEighteen">You must be over 18 to register on this website.</p>
+			</div>
+		</div>
+	</section>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src='http://cdn.jsdelivr.net/jquery.slick/1.5.3/slick.min.js'></script>
+	<script src="js/main.js"></script>
+	<script>
+		// мой скрипт
+	</script>
+</body>
+</html>
+

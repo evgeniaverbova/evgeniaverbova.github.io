@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "iFont";
+	src: url('../fonts/iFont/iFont.eot');
+	src: url('../fonts/iFont/iFont.eot?#iefix') format('eot'),
+		url('../fonts/iFont/iFont.woff') format('woff'),
+		url('../fonts/iFont/iFont.ttf') format('truetype'),
+		url('../fonts/iFont/iFont.svg#iFont') format('svg');
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "iFont";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-arrow_circular:before {
+	content: "\E001";
+}

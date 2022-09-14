@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Museo";
+    src: url("../fonts/Museo-700.eot");
+    src: url("../fonts/Museo-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-700.svg#Museo-700") format("svg"), url("../fonts/Museo-700.ttf") format("truetype"), url("../fonts/Museo-700.woff") format("woff"), url("../fonts/Museo-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Museo";
+  src: url("../fonts/Museo-700Italic.eot");
+  src: url("../fonts/Museo-700Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-700Italic.svg#Museo-700Italic") format("svg"), url("../fonts/Museo-700Italic.ttf") format("truetype"), url("../fonts/Museo-700Italic.woff") format("woff"), url("../fonts/Museo-700Italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: "Museo";
+  src: url("../fonts/Museo300-Regular.eot");
+  src: url("../fonts/Museo300-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo300-Regular.svg#Museo300-Regular") format("svg"), url("../fonts/Museo300-Regular.ttf") format("truetype"), url("../fonts/Museo300-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "TimesNewRomanPSMT";
+  src: url("../fonts/TimesNewRomanPSMT Regular.eot"), url("../fonts/TimesNewRomanPSMT.svg#TimesNewRomanPSMT") format("svg"), url("../fonts/TimesNewRomanPSMT.ttf") format("truetype"), url("../fonts/TimesNewRomanPSMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,137 @@
+@font-face {
+	font-family: "iFont";
+	src: url('../fonts/iFont/iFont.eot');
+	src: url('../fonts/iFont/iFont.eot?#iefix') format('eot'),
+		url('../fonts/iFont/iFont.woff') format('woff'),
+		url('../fonts/iFont/iFont.ttf') format('truetype'),
+		url('../fonts/iFont/iFont.svg#iFont') format('svg');
+}
+
+.icon:before {
+	font-family: "iFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-air:before {
+	content: "\E001";
+}
+
+.icon-arrow:before {
+	content: "\E002";
+}
+
+.icon-arrow_left:before {
+	content: "\E003";
+}
+
+.icon-arrow_left_bold:before {
+	content: "\E004";
+}
+
+.icon-arrow_right:before {
+	content: "\E005";
+}
+
+.icon-arrow_right_bold:before {
+	content: "\E006";
+}
+
+.icon-arrow_too:before {
+	content: "\E007";
+}
+
+.icon-arrow_up:before {
+	content: "\E008";
+}
+
+.icon-boat:before {
+	content: "\E009";
+}
+
+.icon-buses:before {
+	content: "\E00A";
+}
+
+.icon-cross:before {
+	content: "\E00B";
+}
+
+.icon-cross_pop_up:before {
+	content: "\E00C";
+}
+
+.icon-delivery:before {
+	content: "\E00D";
+}
+
+.icon-delivery02:before {
+	content: "\E00E";
+}
+
+.icon-detail:before {
+	content: "\E00F";
+}
+
+.icon-eye:before {
+	content: "\E010";
+}
+
+.icon-facebook:before {
+	content: "\E011";
+}
+
+.icon-generator:before {
+	content: "\E012";
+}
+
+.icon-google:before {
+	content: "\E013";
+}
+
+.icon-hand:before {
+	content: "\E014";
+}
+
+.icon-menu:before {
+	content: "\E015";
+}
+
+.icon-package:before {
+	content: "\E016";
+}
+
+.icon-share:before {
+	content: "\E017";
+}
+
+.icon-storegy:before {
+	content: "\E018";
+}
+
+.icon-train:before {
+	content: "\E019";
+}
+
+.icon-train02:before {
+	content: "\E01A";
+}
+
+.icon-trucks:before {
+	content: "\E01B";
+}
+
+.icon-twitter:before {
+	content: "\E01C";
+}
+
+.icon-user:before {
+	content: "\E01D";
+}

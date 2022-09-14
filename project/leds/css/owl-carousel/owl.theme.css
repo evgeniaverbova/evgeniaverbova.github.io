@@ -1,0 +1,255 @@
+/* clearfix */
+/*.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}*/
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+/*.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}*/
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+/*	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;*/
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/* ---------------------------
+	правки
+--------------------------- */
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #b0b0b1;
+	/*filter: Alpha(Opacity=50);IE7 fix*/
+	opacity: 0.5;
+}
+
+.owl-prev,
+.owl-next {
+	position: absolute;
+}
+
+.owl-next {
+	background: url(sprite.png) -23px -1px no-repeat;
+}
+
+.owl-prev {
+	background: url(sprite.png) 9px -1px no-repeat;
+}
+
+.owl-next:hover {
+	background: url(sprite.png) -23px -40px no-repeat;
+}
+
+.owl-prev:hover {
+	background: url(sprite.png) 9px -40px no-repeat;
+}
+.owl-prev:hover,
+.owl-next:hover {
+	background-color: #b0b0b1;
+}
+
+.owl-item p {
+	padding: 0 5px;
+	letter-spacing: 0.021em;
+}
+
+.readmore {
+	text-transform: uppercase;
+	letter-spacing: 0.021em;
+	font: 1em 'HelveticaNeueCyrRoman', Arial, sans-serif;
+}
+
+.readmore a {
+display: block;
+background: #b0b0b1;
+text-align: center;
+margin: auto;
+color: #fff;
+padding: 6px 0;
+}
+
+.readmore a:hover {
+background: #f26651;
+color: #fff !important;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+/* products */
+
+#products h2 {
+	font: 1em 'HelveticaNeueCyrRoman', Arial, sans-serif;
+	padding-top: 6px;
+}
+
+#products .owl-carousel img {
+	border: 1px solid #b0b0b1;
+}
+
+#products p:not(.readmore) {
+	font: 1em 'HelveticaNeueCyrMedium', Arial, sans-serif;
+}
+
+#products .readmore {
+	margin-top: 30px;
+}
+
+#products .readmore a {
+	width: 151px;
+}
+
+#products .owl-next {
+	top: 173px;
+	right: -110px;
+}
+
+#products .owl-prev {
+	top: 173px;
+	left: -110px;
+}
+
+/* service */
+
+#service h2 {
+	font: 1em 'HelveticaNeueCyrMedium', Arial, sans-serif;
+	margin: 30px 0 27px 0;
+}
+
+#owl-service p.readmore {
+	margin-top: 39px;
+}
+
+#service p:not(.readmore) {
+	font: 1em 'HelveticaNeueCyrLight', Arial, sans-serif;
+	line-height: 1.573em;
+	height: 242px;
+	overflow: hidden;
+}
+
+#service .readmore a {
+width: 176px;
+}
+
+#service .owl-next {
+	top: 254px;
+	right: -102px;
+}
+#service .owl-prev {
+	top: 254px;
+	left: -102px;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 104px;
+	height: 3px;
+	margin: 5px 4px;
+	background: #b0b0b1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	background: #f26651;
+}
+
+.owl-pagination {
+	margin-top: 48px;
+}
